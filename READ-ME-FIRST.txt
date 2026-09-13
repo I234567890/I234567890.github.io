@@ -1,0 +1,42 @@
+LANTERNS WEBSITE CODE
+
+The complete website is included: loading screen, countdown, milliseconds,
+green ring, animated background, looping music, ticking, and release confetti.
+
+UPLOAD TO SPACESHIP
+1. You need a Spaceship Web Hosting plan to upload website files.
+2. Open Hosting Manager, select your hosting, and open cPanel > File Manager.
+3. Open the folder for lanternscountdown.com. It is normally named after the
+   domain. You can also use Hosting Manager > Manage > Files and Storage >
+   Manage files next to your domain to open the correct folder.
+4. Upload this ZIP. Right-click the ZIP and choose Extract in that folder.
+5. index.html, the JavaScript/CSS files, and assets must be directly in the
+   domain folder, rather than inside another folder.
+6. Connect the domain to that hosting plan using the instructions in your
+   Spaceship account. Your existing setup points to the current hosted site;
+   uploading files alone does not move that domain to another host.
+
+This is a static website. It does not need WordPress or a database.
+Keep every file and the assets folder together. You do not paste the code
+into DNS settings. View the uploaded site through its web address.
+
+WHAT TO EDIT
+index.html: page text and structure
+styles.css: appearance and mobile layout
+countdown.js: release timestamp
+app.js: countdown display, loading screen, music and ticking
+confetti.js: one green confetti burst when an open countdown reaches zero
+assets/: ring image, local audio files, typeface and font license
+
+The target is September 13, 2026 at 9 PM Eastern, stored as
+2026-09-13T21:00:00-04:00 (September 14 at 01:00 UTC).
+For another episode, update the timestamp and episode/date text together.
+The timer changes to NOW STREAMING at release. Music continues if enabled.
+Confetti runs once on the transition, then clears itself. Reduced-motion
+preferences disable confetti. A page first opened after release shows
+NOW STREAMING without repeating the celebration.
+Tap the sound button to enable audio; browsers require a visitor gesture.
+
+Spaceship instructions:
+https://www.spaceship.com/knowledgebase/how-to-create-a-website-on-spaceship-hosting/
+https://www.spaceship.com/knowledgebase/blog-migrate-website-to-spaceship-hosting/

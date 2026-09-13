@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030906" />
+  <meta name="description" content="Count down to Lanterns Episode 5. One worldwide countdown to September 13, 2026 at 9 PM Eastern, with an immersive green atmosphere." />
+  <meta property="og:title" content="Lanterns · Episode 5 Countdown" />
+  <meta property="og:description" content="The countdown to Lanterns Episode 5. September 13 at 9 PM ET on HBO and HBO Max." />
+  <title>Lanterns · Episode 5 Countdown</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23030906'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%239cff66' stroke-width='5'/%3E%3Cpath d='M17 15h30M17 49h30' stroke='%239cff66' stroke-width='5'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <div class="loading-screen" id="loader" role="status" aria-label="Loading Lanterns countdown">
+    <div class="loading-content">
+      <div class="loading-orbit" aria-hidden="true"><span></span></div>
+      <span class="loading-title">LANTERNS</span>
+      <span class="loading-caption">Powering up<span class="loading-dots">...</span></span>
+    </div>
+  </div>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <div class="energy-halo halo-one"></div><div class="energy-halo halo-two"></div>
+    <canvas id="particles"></canvas><div class="vignette"></div>
+  </div>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="/" aria-label="Lanterns Countdown home">LANTERNS<span class="wordmark-caption">THE COUNTDOWN</span></a>
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Enable music and ticking sound" aria-pressed="false">
+        <svg class="speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-slash" d="m16 9 6 6m0-6-6 6"/></svg>
+        <span id="sound-label">SOUND OFF</span>
+      </button>
+    </header>
+    <main>
+      <section class="countdown-stage" aria-labelledby="episode-heading">
+        <div class="ring-stage" aria-hidden="true">
+          <div class="ring-aura"></div>
+          <img class="power-ring" id="power-ring" src="/assets/power-ring.webp" alt="" width="640" height="640" fetchpriority="high" />
+        </div>
+        <div class="episode-heading"><span class="hairline"></span><h1 id="episode-heading">EPISODE 5</h1><span class="hairline"></span></div>
+        <div class="clock-container" id="clock-container">
+          <div class="clock" id="clock" role="timer" aria-live="off" aria-label="Countdown to Lanterns Episode 5">
+            <span class="time-group"><span class="number" id="hours">00</span><span class="unit">HOURS</span></span>
+            <span class="colon" aria-hidden="true">:</span>
+            <span class="time-group"><span class="number" id="minutes">00</span><span class="unit">MINUTES</span></span>
+            <span class="colon" aria-hidden="true">:</span>
+            <span class="time-group"><span class="number" id="seconds">00</span><span class="unit">SECONDS</span></span>
+            <span class="milliseconds" aria-hidden="true"><span id="milliseconds">.000</span><span class="ms-unit">MS</span></span>
+          </div>
+        </div>
+        <div class="streaming" id="streaming" hidden><span class="live-caption">THE WAIT IS OVER</span><p>NOW<br class="mobile-break" /> STREAMING</p></div>
+        <p class="release-copy" id="release-copy">Sunday, September 13 <span class="copy-divider">·</span> 9:00 PM ET<br class="mobile-break" /><span class="platforms"> on HBO &amp; HBO Max</span></p>
+        <p class="local-release" id="local-release"></p>
+        <div class="sound-invitation" id="sound-invitation"><span class="invitation-line"></span><span>Sound on. Lights down.</span><span class="invitation-line"></span></div>
+        <p class="audio-message" id="audio-message" role="status" hidden></p>
+        <p class="sr-only" id="release-announcement" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer><span class="footer-line"></span><p>website by <span>budgetz</span></p><span class="footer-line"></span></footer>
+  </div>
+  <noscript><style>.loading-screen{display:none}.clock-container,.local-release,.sound-invitation,.sound-toggle{display:none}</style><p class="no-script">Enable JavaScript to see the live countdown. Episode 5 releases September 13, 2026 at 9 PM ET.</p></noscript>
+</body>
+</html>
